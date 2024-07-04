@@ -1,0 +1,8 @@
+.flare-enabled .flare-light {
+    opacity: 1 !important;
+  }
+  
+  .hover\:flare-enabled:hover .flare-light {
+    opacity: 1 !important;
+  }
+  
