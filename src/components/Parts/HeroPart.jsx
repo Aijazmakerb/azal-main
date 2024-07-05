@@ -81,7 +81,7 @@ export default function HeroPart({setIsSticky, searchParams})
                 </div>
                 <div className="relative h-20 z-30">
                     <Sticky
-                        topOffset={stickyOffset * 1}
+                        topOffset={stickyOffset * -1}
                         stickyStyle={{
                             paddingTop: `${stickyOffset}px`
                         }}
