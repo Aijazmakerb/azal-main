@@ -5,6 +5,7 @@ import HeroPart from './components/Parts/HeroPart'
 import { useDebounce } from './components/hooks/useDebounce'
 import { WideContainer } from './components/WideContainer'
 import { SearchLoadingPart } from './components/Search/SearchLoadingPart'
+import { SearchListPart } from './components/Search/SearchListPart'
 
 function useSearch(search)
 {
@@ -43,7 +44,7 @@ export default function App() {
           {s.loading ? (
             <SearchLoadingPart/>
           ) : s.searching ? (
-            <div>Searching</div>
+            <SearchListPart searchQuery={search}/>
           ) : (
             <></>
           )}
