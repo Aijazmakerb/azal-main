@@ -70,11 +70,11 @@ export function MediaCard(props)
     const content = <MediaCardContent {...props} />;
 
     return(
-        <a
+        <Link
             to={props.media.id}
             className={"tabbable"}
         >
             {content}
-        </a>
+        </Link>
     )
 }

@@ -4,7 +4,7 @@ function decode(query) {
   return query ? decodeURIComponent(query) : "";
 }
 export function useSearchQuery() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const params = useParams();
   const [search, setSearch] = useState(decode(params.query));
   useEffect(() => {
@@ -13,16 +13,16 @@ export function useSearchQuery() {
   const updateParams = (inp, commitToUrl = false) => {
     setSearch(inp);
     if (!commitToUrl) return;
-    // if (inp.length === 0) {
-    //   navigate("/", { replace: true });
-    //   return;
-    // }
-    // navigate(
-    //   generatePath("/browse/:query", {
-    //     query: inp,
-    //   }),
-    //   { replace: true },
-    // );
+    if (inp.length === 0) {
+      navigate("/", { replace: true });
+      return;
+    }
+    navigate(
+      generatePath("/browse/:query", {
+        query: inp,
+      }),
+      { replace: true },
+    );
   };
   const onUnFocus = (newSearch) => {
     updateParams(newSearch !== undefined ? newSearch : search, true);
