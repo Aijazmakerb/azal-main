@@ -1,5 +1,6 @@
 import BrandPill from "./BrandPill"
 import { Icon ,Icons } from "./Icon"
+import { app } from "./utils/constants"
 import { WideContainer } from "./WideContainer"
 
 export function Footer()
@@ -17,7 +18,7 @@ export function Footer()
                     <h3 className="font-semibold text-type-emphasis">
                         Disclaimer
                     </h3>
-                    <p className="mt-3">aijaz does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. movie-web is not responsible for any media files shown by the video providers.</p>
+                    <p className="mt-3">{app.name} does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. {app.name} is not responsible for any media files shown by the video providers.</p>
                 </div>
                 <div className="flex flex-wrap gap-[0.5rem] -ml-3">
                     <a

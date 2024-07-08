@@ -6,6 +6,10 @@ import { useDebounce } from './components/hooks/useDebounce'
 import { WideContainer } from './components/WideContainer'
 import { SearchLoadingPart } from './components/Search/SearchLoadingPart'
 import { SearchListPart } from './components/Search/SearchListPart'
+import { Route, Routes } from 'react-router-dom'
+import { NotFoundPage } from './components/errors/NotFoundPage'
+import { Info } from './info'
+import { AzalsPlaylist } from './components/AzalsPlaylist'
 
 function useSearch(search)
 {
@@ -26,7 +30,7 @@ function useSearch(search)
   }
 }
 
-export default function App() {
+function HomeScreen() {
   const searchParams = useSearchQuery();
   const [search] = searchParams;
 
@@ -46,10 +50,37 @@ export default function App() {
           ) : s.searching ? (
             <SearchListPart searchQuery={search}/>
           ) : (
-            <></>
+            <AzalsPlaylist/>
           )}
         </WideContainer>
       </HomeLayout>
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <Layout>
+      <Routes>
+        <Route path='/' element={<HomeScreen />} />
+        <Route path='/browse/:query?' element={<HomeScreen />} />
+        <Route path='/watch/:id?' element={<Info />} />
+
+        <Route path='*' element={<NotFoundPage />} />
+      </Routes>
+    </Layout>
+  )
+}
+
+function Layout(props)
+{
+  return (
+    <div>
+      <div
+        className='flex min-h-screen flex-col'
+      >
+        {props.children}
+      </div>
+    </div>
   )
 }

@@ -69,12 +69,14 @@ export function MediaCard(props)
 {
     const content = <MediaCardContent {...props} />;
 
-    return(
-        <Link
-            to={props.media.id}
-            className={"tabbable"}
-        >
-            {content}
-        </Link>
+    return (
+        <>
+            <Link
+                to={`/watch${props.media.id}`}
+                className={"tabbable"}
+            >
+                {content}
+            </Link>
+        </>
     )
 }
