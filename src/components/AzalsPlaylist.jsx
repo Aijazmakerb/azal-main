@@ -19,6 +19,22 @@ const data = [
         type: "Movie",
         year: "2021",
         url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
+    },
+    {
+        img: "https://media.themoviedb.org/t/p/original/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+        id: "/438631",
+        title: "Dune",
+        type: "Movie",
+        year: "2021",
+        url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
+    },
+    {
+        img: "https://media.themoviedb.org/t/p/original/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
+        id: "/693134",
+        title: "Dune:Part Two",
+        type: "Movie",
+        year: "2024",
+        url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
     }
 ]
 
