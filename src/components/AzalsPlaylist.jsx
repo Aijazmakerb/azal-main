@@ -21,6 +21,14 @@ const data = [
         url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
     },
     {
+        img: "https://media.themoviedb.org/t/p/original/yrpPYKijwdMHyTGIOd1iK1h0Xno.jpg",
+        id: "/762441",
+        title: "A Quiet Place: Day One",
+        type: "Movie",
+        year: "2024",
+        url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
+    },
+    {
         img: "https://media.themoviedb.org/t/p/original/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
         id: "/438631",
         title: "Dune",
@@ -34,6 +42,22 @@ const data = [
         title: "Dune:Part Two",
         type: "Movie",
         year: "2024",
+        url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
+    },
+    {
+        img: "https://media.themoviedb.org/t/p/original/hETrPpoKs6BwoilK64YJ7Z5GcRT.jpg",
+        id: "/480414",
+        title: "The Curse of La Llorona",
+        type: "Movie",
+        year: "2019",
+        url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
+    },
+    {
+        img: "https://media.themoviedb.org/t/p/original/1gDV0Lm9y8ufIKzyf0h0GBgb9Zj.jpg",
+        id: "/109428",
+        title: "Evil Dead",
+        type: "Movie",
+        year: "2013",
         url: "/fQpxCnhbeE15ewdKf2N4bT4PMRw7HQVAfG56BXtac0B3Lg"
     }
 ]
